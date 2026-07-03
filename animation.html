@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            border:5px solid black;
+            box-sizing:border-box;
+            height:700px;
+        }
+        #box1{
+            background-color: blue;
+            margin:10px;
+            padding:10px;
+            height:15px;
+            width:200px;
+            position:relative;
+            border:2px solid yellowgreen;
+            border-radius: 5px;
+            animation-name: leftbox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-play-state: running;
+            
+           
+        }
+        #box2{
+            width:200px;
+            background-color: blue;
+            margin:10px;
+            padding:10px;
+            height:15px;
+            position:relative;
+            border:2px solid yellowgreen;
+            border-radius: 5px;
+            animation-name: rightbox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+        #circle{
+            background-color: blue;
+            border:2px solid yellowgreen;
+            border-radius: 50px;
+            width:60px;
+            height:60px;
+            position:relative;
+            animation-name: circles;
+             animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+        @keyframes leftbox{
+            from{top: 0;
+                left:0;
+            }
+            to{
+                top:0;
+                left:1750px;
+            }
+        }
+        @keyframes circles{
+                0% {
+                    top:1%;
+                    left:5%;
+                }
+                30% {
+                    top:5%;
+                    left:50%;
+                }
+                60%{
+                    top:60%;
+                    left:10%;
+                }
+                90% {
+                    top:75%;
+                    left:80%;
+                }
+            
+        }
+        @keyframes rightbox{
+            from{
+                top:500px;
+                left:1350px;
+            }
+            to{
+                top:500px;
+                left:0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1"></div>
+        <div id="circle"></div>
+        <div id="box2"></div>
+    </div>
+</body>
+</html>

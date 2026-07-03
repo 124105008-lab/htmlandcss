@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+</head>
+<body>
+        <form>
+            <h1>PAYMENT FORM</h1>
+            <h4>Required fields are followed by*</h4>
+            <h2>Contact Information</h2>
+            <label for="name">Name:*</label>
+            <input type="text" id="name" required>
+            <br>
+            <fieldset>
+                <legend>Gender*</legend>
+                <label for="male" >Male</label>
+                <input type="radio" name="gender" id="male" required>
+                <label for="female" >Female</label>
+                <input type="radio" name="gender" id="female" required>
+            </fieldset>
+            <br>
+            <br>
+            <label for="add">Address:</label>
+            <textarea value="Address" id="add" cols="60" rows="8" placeholder="write address here"></textarea>
+            <br>
+            <br>
+<label for="email">Email:*</label>
+<input type="email" id="email" required>
+<br><br>
+<label for="code">Pincode:*</label>
+<input type="password" id="code" required>
+<br><br>
+<h1>PAYMENT INFORMATION</h1>
+<label for="card">Card Type:*</label>
+<select id="card" required>
+    <option value="visa" name="visa">Visa</option>
+    <option value="rupay" name="rupay">Rupay</option>
+    <option value="mastercard" name="mastercard">Mastercard</option>
+</select>
+<br>
+<br>
+<label for="num">Card Number:*</label>
+<input type="number" id="num" required>
+<br><br>
+<label for="date">Expiration Date:*</label>
+<input type="date" id="date" required>
+<br><br>
+<button value="submit" name="PayNow" id="pay">Pay Now</button>
+        </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: aqua;
+            height:800px;
+            border:2px solid black;
+        }
+        .con{
+            width:150px;
+            height:150px;
+        }
+        #box1{
+            background-color: blueviolet;
+            border:1px solid black;
+            margin:2px;
+            padding:2px;
+        }
+        #box2{
+            background-color: gold;
+            border:1px solid black;
+             margin:2px;
+            padding:2px;
+        }
+        #box3{
+            background-color: green;
+            border:1px solid black;
+             margin:2px;
+            padding:2px;
+        }
+        #box4{
+            background-color: palevioletred;
+            border:1px solid black;
+             margin:2px;
+            padding:2px;
+        }
+        @media(max-width:500px){
+            #container{
+                display:flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1" class="con">box1</div>
+        <div id="box2" class="con">box2</div>
+        <div id="box3" class="con">box3</div>
+        <div id="box4" class="con">box4</div>
+    </div>
+</body>
+</html>
